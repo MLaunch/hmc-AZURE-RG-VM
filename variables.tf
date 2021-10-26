@@ -12,3 +12,8 @@ variable "resourcegroup" {
   default     = "cloudgrowth"
   description = "Cloud Growth Team"
 }
+
+variable "region" {
+  default     = "usgovvirginia"
+  description = "Azure Region Code"
+}
