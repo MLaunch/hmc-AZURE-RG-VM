@@ -10,7 +10,6 @@ terraform {
 # Configure the Microsoft Azure Provider
 provider "azurerm" {
    features {}
-   AuthorityHost = "AzureAuthorityHosts.AzureGovernment"
 }
 
 # Create a resource group if it doesn't exist
