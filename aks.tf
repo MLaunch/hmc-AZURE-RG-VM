@@ -29,3 +29,9 @@ output "kube_config" {
 
   sensitive = true
 }
+
+output "aks_endpoint" {
+  value = azurerm_kubernetes_cluster.example."API server address"
+
+  sensitive = true
+}
