@@ -20,6 +20,11 @@ resource "azurerm_kubernetes_cluster" "example" {
   }
 }
 
+data "azurerm_kubernetes_cluster" "example" {
+  name                = azurerm_kubernetes_cluster.example.name
+  resource_group_name = azurerm_resource_group.myterraformgroup.name
+}
+
 output "client_certificate" {
   value = azurerm_kubernetes_cluster.example.kube_config.0.client_certificate
 }
