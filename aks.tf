@@ -26,7 +26,7 @@ data "azurerm_kubernetes_cluster" "example" {
 }
 
 output "client_certificate" {
-  value = ${base64decode(azurerm_kubernetes_cluster.example.kube_config.0.client_certificate)}
+  value = "${base64decode(azurerm_kubernetes_cluster.example.kube_config.0.client_certificate)}"
 }
 
 output "kube_config" {
